@@ -47,7 +47,7 @@ wishme()
 while True:
     str = mic_input()
     if 'help' in str:
-        speak('hai mownish  how can i help you')
+        speak('how can i help you')
     elif 'wikipedia' in str:
         speak('searching in wikipedia')
         result = wp.summary(str, sentences=2)
@@ -55,12 +55,11 @@ while True:
         speak(result)
     elif 'time' in str:
         time = datetime.datetime.now().strftime('%H:%M:%S')
-        speak('mownish   the time is  {} '.format(time))
+        speak('the time is  {} '.format(time))
     elif 'date' in str:
         date = datetime.datetime.now().date()
         speak('today date is  {} '.format(date))
     elif 'website' in str:
-        speak('yaa mownish')
         speak('opening your website')
         webbrowser.open('http://investyourtime.000webhostapp.com')
     elif 'game' in str:
@@ -69,15 +68,11 @@ while True:
     elif 'miv' in str:
         speak('opening your multimedia software')
         os.startfile('MIV.exe')
-    elif 'training' in str:
-        speak('its opening')
-        webbrowser.open('https://fourstepsolutions.com')
     elif 'colab' in str:
         speak('colab is ready to use')
         webbrowser.open('https://colab.research.google.com')
-
     elif 'music' in str:
-        speak('yaa mownish   playing music for you')
+        speak('playing music for you')
         musicdir = 'music file path'
         songs = os.listdir(musicdir)
         os.startfile(os.path.join(musicdir, random.choice(songs)))
@@ -86,7 +81,7 @@ while True:
     elif 'video' in str:
         os.startfile('video file path')
     elif 'notepad' in str:
-        os.startfile("C:\\Program Files\\Notepad++\\notepad++.exe")
+        os.startfile("notepad++.exe")
     elif 'thank' in str:
-        speak('bye,, mownish')
+        speak('thank you')
 
