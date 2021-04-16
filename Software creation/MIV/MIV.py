@@ -64,7 +64,7 @@ def contact_fun():
     status_bar['text'] = 'Open contact'
     mb.showinfo('contact', 'Founder : Mowneeshkumar E'
                            '                                                  '
-                           '                  mailto : mowneesh17@gmail.com')
+                           '                  mailto : something@gmail.com')
 
 
 # listbox functions
