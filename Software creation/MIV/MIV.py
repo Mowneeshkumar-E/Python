@@ -73,7 +73,7 @@ def about_fun():
 def contact_fun():
     status_bar['text'] = 'Open contact'
     mb.showinfo('contact',"""
-    Founder : Mowneeshkumar E
+    Founder : name
     
     mailto : mailname@gmail.com""")
 
