@@ -27,44 +27,55 @@ def open_fun():
 
 def instructions_fun():
     status_bar['text'] = 'Open Instructions'
-    mb.showinfo('Instructions', 'First of all open your files '
-                                'you want to perform and add '
-                                'it in your listbox.After that cilck any one '
-                                'of the file in your listbox and press the buttons '
-                                'accordingly.For example if it is an mp3 file '
-                                'first you just click the file in your listbox '
-                                'and click the play button under the music section.'
-                                'Likewise perform other files respectively')
+    mb.showinfo('Instructions',"""
+    1.First of all open your files you want to perform 
+    and add it in your listbox.
+    
+    2.After that click any one of the file in your listbox 
+    and press the buttons accordingly.
+    
+    3.For example if it is an mp3 file 
+    first you just click the file in your listbox 
+    and click the play button under the music section.
+    
+    4.Likewise perform other files respectively.
+    """)
 
 
 def note_fun():
     status_bar['text'] = 'Open note'
-    mb.showinfo('Note', 'For music : MIV only supports mp3 file.               '
-                        '                                       '
-                        'For image : It supports jpg,png and jpeg.'
-                        '                                                      '
-                        'For video : It only supports mp4 file'
-                        ' and do not play very short videos in MIV. Press '
-                        'space button to pause the video'
-                        ' and if you want minimize or close your '
-                        'video window then make sure you need to'
-                        ' pause the video after that minimize or'
-                        ' closed it.')
+    mb.showinfo('Note',"""
+    For music : MIV only supports mp3 file.         
+                                                              
+    For image : It supports jpg,png and jpeg.
+                    
+    For video : It only supports mp4 file
+    and do not play very short videos in MIV.
+     
+    Press space button to pause the video
+    and if you want to minimize or close your
+    video window then make sure you need to
+    pause the video after that minimize or
+    closed it.""")
 
 
 def about_fun():
     status_bar['text'] = 'Open about'
-    mb.showinfo('about MIV', 'MIV is a simple and '
-                             'effective software.It performs three operations.'
-                             'Where you can play music and view image and watch '
-                             'movie within the same software')
+    mb.showinfo('about MIV',"""
+    MIV is a simple and effective software.
+    
+    It performs three operations.
+    
+    Where you can play music and view image and watch 
+    movie within the same software.""")
 
 
 def contact_fun():
     status_bar['text'] = 'Open contact'
-    mb.showinfo('contact', 'Founder : Mowneeshkumar E'
-                           '                                                  '
-                           '                  mailto : something@gmail.com')
+    mb.showinfo('contact',"""
+    Founder : Mowneeshkumar E
+    
+    mailto : mailname@gmail.com""")
 
 
 # listbox functions
@@ -96,9 +107,10 @@ def playmusic_fun():
         mixer.music.load(play_song)
         mixer.music.play()
     except:
-        mb.showerror('Error playing music', 'First of all open your songs and add it in your '
-                                            'listbox after that click any one song and click '
-                                            'the play button')
+        mb.showerror('Error playing music',"""
+        First of all open your songs and add it in your
+        listbox after that click any one of the song 
+        and click the play button.""")
 
 
 def stopmusic_fun():
@@ -159,9 +171,10 @@ def image_fun():
         cv2.imshow('Image Viewer', resized_image)
         cv2.waitKey(0)
     except:
-        mb.showerror('Error viewing image', 'First of all open your images and add it in your '
-                                            'listbox after that click any one image and click '
-                                            'the view button')
+        mb.showerror('Error viewing image',"""
+        First of all open your images and add it in your
+        listbox after that click any one of the image 
+        and click the view button.""")
 
 
 def video_fun():
