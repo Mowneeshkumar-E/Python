@@ -65,7 +65,7 @@ time_limit_text = pygame.font.Font('.ttf\\Pacifico.ttf', 50)
 
 
 def t_fun():
-    time_limit = time_limit_text.render('Sec: ' + str(final_time), True, (0, 0, 0))
+    time_limit = time_limit_text.render('Time Left: ' + str(final_time), True, (0, 0, 0))
     display.blit(time_limit, (1120, 0))
 
 
