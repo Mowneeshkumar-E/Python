@@ -61,7 +61,7 @@ while True:
         speak('today date is  {} '.format(date))
     elif 'website' in str:
         speak('opening your website')
-        webbrowser.open('http://investyourtime.000webhostapp.com')
+        webbrowser.open('http://investyourtime.pythonanywhere.com')
     elif 'game' in str:
         speak('opening your game')
         os.startfile('flycycle.exe')
